@@ -345,7 +345,6 @@ class Translator:
                 self.current += 1
                 # check for the dot operator
                 if self.tokens[self.current].token_type == TokenType.DOT:
-                    print("MADE IT HERE")
                     self.output_file.write(self.tokens[self.current].lexeme)
                     self.current += 1
                     # write the function
