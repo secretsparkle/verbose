@@ -1,0 +1,31 @@
+
+define main as
+
+define even as lambda takes x, if x mod 2 equals 0, then true, otherwise false.
+
+define odd as
+    lambda takes x
+        if x mod 2 equals 0
+            then return false
+        otherwise return true
+
+define length as lambda takes sequence, if sequence is null, then return 0
+                                        otherwise return add 1 length rest sequence
+
+
+define reverse as
+    lambda takes sequence
+        if sequence is null then return empty
+        otherwise return construct last sequence reverse rest sequence 
+
+comment
+define guessing-game takes number-to-guess as
+       define guess as input from standard-in
+              if guess is less than number-to-guess
+                  then print "too low"
+                  and call guessing-game with random-int
+              otherwise if guessing-game is greater than number-to-guess
+                  then print "too high"
+                  and call guessing-game with number-to-guess
+              otherwise print "correct" 
+end-comment

@@ -1,0 +1,69 @@
+
+import random
+
+set number 2
+set value 3
+
+set fn lambda x y
+   print x
+   print y
+   return y
+
+fn number (number + value)
+fn number value
+
+set is-two lambda x
+    if x is 2
+       return true
+    otherwise
+      return false
+
+set not lambda x
+    if x then return false
+    otherwise return true
+
+print is-two number
+print not is-two number
+
+set sequence [1 2 3 4 5]
+print first sequence
+print rest sequence
+
+set bool-value not True 
+print bool-value
+
+prepend 0 sequence 
+print sequence
+
+set sequence []
+prepend 1 sequence
+prepend 4 sequence
+append 5 sequence
+append 6 sequence
+print sequence
+
+set is-even lambda value
+    if value mod 2 is 0
+       return true
+    otherwise return false
+
+if is-even first sequence then print "It's even"
+otherwise print "it's not even"
+
+print first sequence
+
+loop through sequence by value
+    print value
+
+loop while true
+    print sequence
+    leave
+
+set sum lambda sequence
+    set value 0
+    loop through sequence by element
+        set value (add value element)
+    return value
+
+print sum sequence
+print random.randint 0 9
